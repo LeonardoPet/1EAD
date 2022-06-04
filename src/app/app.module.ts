@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { ListarComponent } from './listar/listar.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { FormsModule } from '@angular/forms';
-import { DeletarComponent } from './deletar/deletar.component';
+
 import { AtualizarComponent } from './atualizar/atualizar.component';
 
 
@@ -16,7 +16,6 @@ import { AtualizarComponent } from './atualizar/atualizar.component';
     AppComponent,
     ListarComponent,
     CadastrarComponent,
-    DeletarComponent,
     AtualizarComponent,
     
   ],

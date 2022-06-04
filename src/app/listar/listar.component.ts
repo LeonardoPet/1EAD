@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { subscribeOn } from 'rxjs';
+
 import { Produto } from '../Produto';
 import { WebService } from '../web.service';
 

@@ -18,8 +18,18 @@ export class AtualizarComponent implements OnInit {
 
   ngOnInit(): void {
     this.id = this.route.snapshot.params['id']
+    this.preencher_campos(this.id);
   }
   
+  preencher_campos(id){
+    
+    this.web.getOneProduct(id).subscribe(res =>{
+      let produtoTemporario = res
+      this.produto.title = produtoTemporario.title
+      this.produto.price = produtoTemporario.price
+      this.produto.description = produtoTemporario.description
+    });
+  }
 
   AtualizarProduct(id){
     this.web.atualizarProduct(id, this.produto).subscribe({
